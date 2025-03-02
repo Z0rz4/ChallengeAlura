@@ -5,12 +5,12 @@ function adicionarAmigo(){
     let input = document.querySelector('input');
     input.setAttribute('autocomplete','off');
 
-    if(input != ""){
+    if(input.value !== ""){
         listaNomes.push(input.value);
         atualizaLista();
         limpaCampo();
     } else {
-        alert("Por favor, insira um nome.");
+        input.setAttribute('placeholder','Por favor, digite um nome!');
     }
 
 }
@@ -32,5 +32,13 @@ function sortearAmigo(){
     let AmigoSelecionado = document.getElementById('resultado');
     let amigos = Math.floor(Math.random() * listaNomes.length);
     console.log(amigos.toString());
-    AmigoSelecionado.innerHTML = `<li>${listaNomes[amigos]}</li>`;
+    if(listaNomes[amigos] != undefined){
+    AmigoSelecionado.innerHTML = `
+    <h2> O ganhador foi: </h2>
+    <br>
+    <li>${listaNomes[amigos]}</li>`;
+    } else {
+    AmigoSelecionado.innerHTML = 
+        `<h2> Adicione um jogador </h2>`
+    }
 }
