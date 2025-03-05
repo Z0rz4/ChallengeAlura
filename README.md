@@ -29,4 +29,4 @@ Projeto realizado e modificado por mim na aula Challenge:Amigo Secreto da Oracle
 * Não há necessidade de instalação. Basta apenas acessar este link em seu navegador.
 
 ## Github Pages
-* https://z0rz4.github.io/ChallengeAlura/
+* https://z0rz4.github.io/Challenge_NextOne-Alura/
