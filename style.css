@@ -106,13 +106,14 @@ button:hover{
 
 /* Lista de Amigos */
 .name-list{
-    position: absolute;
-    bottom: 100px;
-    overflow-y: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: auto;
     list-style-type: none;
     height: 80px;
     width: 300px;
-    text-align: center;
 }
 
 /* Resultado do sorteio*/
